@@ -1,4 +1,7 @@
 import { useState } from "react"
+import PasswordGenerator from "./PasswordGenerator"
+
+
 
 const App=()=>{
   let [count,setCount]= useState(15)
@@ -10,16 +13,22 @@ const App=()=>{
     
   }
   const removeon=()=>{
-    count-=1
-    setCount(count)
+
+    if(count!=0){
+      count-=1
+      setCount(count)
+    }
     console.log(count, Math.random());
     
   }
   return(
     <>
-    <h1>counter : {count}</h1>
+   
+    <h1 className="text-blue-500">counter : {count}</h1>
     <button onClick={addon}>add</button>
     <button onClick={removeon}>remove</button>
+  
+  <PasswordGenerator/>
     </>
   )
 }
