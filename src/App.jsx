@@ -1,6 +1,5 @@
 import { useState } from "react"
-import PasswordGenerator from "./PasswordGenerator"
-
+import Todo from "./Todo"
 
 
 const App=()=>{
@@ -27,8 +26,8 @@ const App=()=>{
     <h1 className="text-blue-500">counter : {count}</h1>
     <button onClick={addon}>add</button>
     <button onClick={removeon}>remove</button>
-  
-  <PasswordGenerator/>
+    <Todo/>
+
     </>
   )
 }
