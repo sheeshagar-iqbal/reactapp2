@@ -8,9 +8,9 @@ const Home = () => {
 
         const   fetchmovies= async (query)=>{
                 setLoading(true)
-                const res =await fetch()
+                const res =await fetch(`http://www.omdbapi.com/?=tt3896198&apikey=af7d9aea&s=${query}`)
                 const data= await res.json()
-                console.log(data);
+                // console.log(data);
                 setMovies(data.Search || [])
                 setLoading(false)
         }
