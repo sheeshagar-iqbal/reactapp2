@@ -1,26 +1,26 @@
 {
-   "users":[
+  "users": [
     {
-        "id":1,
-        "name":"abhi",
-        "username":"aray",
-        "age":23,
-        "email":"aray@gmail.com"
+      "name": "rey",
+      "username": "iqbal",
+      "email": "rey@gamil.com",
+      "age": 45,
+      "id": "bP3ZTPCsw-g"
     },
     {
-        "id":2,
-        "name":"mukul",
-        "username":"m. kumar",
-        "age":23,
-        "email":"mkumar@gmail.com"
+      "name": "rey",
+      "username": "rohit",
+      "email": "iq@gmail.com",
+      "age": 45,
+      "id": "fd_9g-hg8BA"
     },
     {
-        "id":3,
-        "name":"ali",
-        "username":"m ali",
-        "age":23,
-        "email":"ali21@gmail.com"
+      "name": "rey",
+      "username": "iqbal",
+      "email": "iq@gmail.com",
+      "age": 45,
+      "id": "3hEWycgI6_k"
     }
-
-    ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

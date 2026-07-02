@@ -6,7 +6,10 @@ const Flayout = () => {
   return (
     <>
     <Header1/>
+    <div>
     <Outlet/>
+
+    </div>
     </>
   )
 }

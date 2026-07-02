@@ -5,6 +5,7 @@ import Todo from "./Todo";
 import MovieExp from "./movieExplorer/MovieExp";
 import Shopcart from "./shopcart/Shopcart";
 import Axios1 from "./axios/axios/axios1";
+import Shopsy from "./Shopsy/Shopsy";
 
 const App=()=>{
   
@@ -15,7 +16,9 @@ const App=()=>{
    {/* <Todo/> */}
    {/* <MovieExp/> */}
    {/* <Shopcart/> */}
-   <Axios1/>
+   {/* <Axios1/> */}
+   {/* <Shopsy/> */}
+   <h1> hi</h1>
 
 
     </>

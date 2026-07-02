@@ -1,21 +1,26 @@
-import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Userlist from './pages/Userlist'
 import Addedituser from './pages/Addedituser'
 import Flayout from './layout/Flayout'
-import Header1 from './component/Header'
+// import Header1 from './component/Header'
 
+
+import React, { useRef } from 'react';
+import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
+import { Toast } from 'primereact/toast';
 const Axios1 = () => {
+   const toast = useRef(null);
   return (
     <>
     <BrowserRouter>
-    <Header1/>
+    <Toast ref={toast} />
+   <ConfirmDialog />
     <Routes>
-     {/* <Route index element={<Flayout/>}> */}
-      <Route path='/' element ={<Userlist/>}/>
-      <Route path='/add' element ={<Addedituser/>}/>
-      <Route path='/edit/:id' element ={<Addedituser/>}/>
-     {/* </Route> */}
+    <Route  element={<Flayout />}>
+          <Route path='/' element={<Userlist toast={toast} />} />
+          <Route path="add" element={<Addedituser toast={toast} />} />
+          <Route path="edit/:id" element={<Addedituser toast={toast} />} />
+     </Route>
 
     </Routes>
     </BrowserRouter>
